@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comitard — Liens</title>
+<!-- PINTEREST_VERIFY_TAG_GOES_HERE -->
+<style>
+  :root {
+    --ink: #1B231F;
+    --paper: #F4F1E6;
+    --green: #2F5D50;
+    --green-light: #7FB59B;
+    --gold: #C9A227;
+    --rust: #B23A2E;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(160deg, #182B22, #0E1712);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+  .avatar {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--paper);
+    border: 3px solid var(--green-light);
+  }
+  h1 {
+    font-size: 26px;
+    margin: 0 0 4px;
+    letter-spacing: 1px;
+  }
+  p.tag {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--green-light);
+    margin: 0 0 32px;
+  }
+  a.link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--paper);
+    color: var(--ink);
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+    font-family: Verdana, Arial, sans-serif;
+    text-align: left;
+    transition: transform 0.15s ease;
+    border-left: 5px solid var(--green);
+  }
+  a.link:hover { transform: translateY(-2px); }
+  a.link .icon {
+    font-size: 22px;
+    width: 30px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  a.link .txt strong {
+    display: block;
+    font-size: 15px;
+  }
+  a.link .txt span {
+    display: block;
+    font-size: 12px;
+    color: #555;
+    margin-top: 2px;
+  }
+  a.link.etsy { border-left-color: var(--rust); }
+  a.link.redbubble { border-left-color: var(--gold); }
+  footer {
+    margin-top: 28px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    color: #8a988f;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">C</div>
+    <h1>Comitard</h1>
+    <p class="tag">Templates &amp; Designs Digitaux</p>
+
+    <a class="link etsy" href="https://clarityplannetresors.etsy.com" target="_blank" rel="noopener">
+      <span class="icon">🧾</span>
+      <span class="txt">
+        <strong>Boutique Etsy</strong>
+        <span>Planners &amp; templates Excel/Word</span>
+      </span>
+    </a>
+
+    <a class="link" href="https://depouhon.gumroad.com" target="_blank" rel="noopener">
+      <span class="icon">📦</span>
+      <span class="txt">
+        <strong>Gumroad</strong>
+        <span>Content Planner, CV, Budget Tracker</span>
+      </span>
+    </a>
+
+    <a class="link redbubble" href="https://www.redbubble.com/people/DeadlineCoffee/shop" target="_blank" rel="noopener">
+      <span class="icon">☕</span>
+      <span class="txt">
+        <strong>Redbubble — DeadlineCoffee</strong>
+        <span>T-shirts, mugs &amp; stickers freelance humor</span>
+      </span>
+    </a>
+
+    <footer>comitard.github.io</footer>
+  </div>
+</body>
+</html>
